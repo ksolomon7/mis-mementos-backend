@@ -1,4 +1,5 @@
 class MemorySerializer < ActiveModel::Serializer
-  attributes :id, :name, :description, :city, :zip_code, :address, :state
-  has_one :User
+  attributes :id, :title, :about, :address, :city, :state, :zipcode
+  # has_one :User
+  has_many :notes
 end
